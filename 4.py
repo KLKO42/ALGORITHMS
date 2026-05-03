@@ -17,8 +17,7 @@ def measure_time(func, data):
     return end - start
 
 if __name__ == '__main__':
-    #тут o(n^2), => беру меньшие значения, чтобы не было так долго
-    sizes = [100, 200, 300, 400, 500]
+    sizes = [100, 1000, 5000, 10000]
     for n in sizes:
         t = measure_time(task4, n)
         print(f"{n} {t:.6f}")
