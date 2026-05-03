@@ -31,7 +31,7 @@ def generate_array(n):
     return arr
 
 if __name__ == '__main__':
-    sizes = [100, 500, 1000, 2000, 5000]
+    sizes = [100, 1000, 5000, 10000]
     for n in sizes:
         arr = generate_array(n)
         t, mem = measure_time_and_memory(task5, arr)
